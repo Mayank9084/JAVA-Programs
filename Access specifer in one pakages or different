@@ -1,0 +1,22 @@
+//first package
+
+package ken;
+
+public class Hello {
+	
+	public void display() {
+	System.out.println("Hello");
+	}
+}
+
+
+//Second Package
+
+package may;
+import ken.Hello;
+public class Mayank {
+ public static void main(String[] args) {
+	 Hello h = new Hello();
+	 h.display();
+ }
+}
