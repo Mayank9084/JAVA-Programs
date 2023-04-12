@@ -1,0 +1,15 @@
+public class Literals {
+    public static void main(String[] args){
+        byte age = 34; // byte, int , short predefined hotey hai so inh hume define ni krna pdta jse long me ya char me krtey hai
+        int age2 = 67;
+        short age3 = 45;
+        long ageMe = 345678888L; // isme last me l isliye lgaya hai qki hmne define kiya hai ki yeh long int hai
+        char ch = 'A';
+        float f1 = 5.6f; // the last f for define this is float value
+        double d1 = 4.66D; // koi bhi decimal number ek double literal hota hai
+        boolean a = true;
+        System.out.println(age);
+        String str = "Mayank";
+        System.out.println(str);
+    }
+}
