@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Marks_percentage {
+    public static void main (String[] args){
+        int sub1, sub2, sub3, flg, sub4, sub5, marks, total;
+        float  percentage;
+        Scanner sc = new Scanner(System.in);
+        // * Subject 1 marks * //
+        System.out.println("Marks of Subject 1 = ");
+        sub1 = sc.nextInt();
+        System.out.println(sub1);
+        // * Subject 2 Marks * //
+        System.out.println("MARKS of Subject 2 = ");
+        sub2 = sc.nextInt();
+        System.out.println(sub2);
+        // * Marks of Subject 3 * //
+        System.out.println("Marks of Subject 3 = ");
+        sub3 = sc.nextInt();
+        System.out.println(sub3);
+        // * Marks of Subject 4 * //
+        System.out.println("Marks of Subject 4 = ");
+        sub4 = sc.nextInt();
+        System.out.println(sub4);
+        // * Marks of Subject 5 * //
+        System.out.println("Marks of Subject 5 = ");
+        sub5 = sc.nextInt();
+        System.out.println(sub5);
+        // * One subject full Marks * //
+        System.out.println("Marks out of = ");
+        marks = sc.nextInt();
+        System.out.println(marks);
+        flg = (marks * 5);
+        // * Total marks * //
+        total = sub1 + sub2 + sub3 + sub4 + sub5;
+        System.out.println("total marks = " +total);
+        // * condition for finding percentage * //
+        percentage = (total * 100) / flg; // total and * bracket me he lege vrna output zero aayega ya fir starting me float likhna pdega
+        System.out.println("Overall percentage = " +percentage);
+    }
+
+}
