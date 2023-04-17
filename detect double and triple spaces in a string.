@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Detect_double_and_triple_spaces_in_string {
+    public static void main (String[] args){
+        //  detect double and triple spaces in a string //
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        System.out.println(a);
+        System.out.println(a.indexOf("  "));
+        System.out.println(a.indexOf("   "));
+    }
+}
+
+OUTPUT :- 
+
+My name  is   Mayank singh
+My name  is   Mayank singh
+7
+11
