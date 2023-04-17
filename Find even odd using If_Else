@@ -1,0 +1,15 @@
+package mayank;
+import java.util.Scanner;
+public class Control_statement {
+ public static void main (String[] args) {
+	// checks whether a given number is an even or odd number //
+	  Scanner sc = new Scanner(System.in);
+	  int i = sc.nextInt();
+	  if(i%2==0) {
+		  System.out.println("Number is even" +i);
+	  }
+		  else {
+			  System.out.println("Number is odd " +i);
+		  }
+	  }
+ }
