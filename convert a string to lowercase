@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class String_LowerCase {
+    // convert a string to lowercase //
+    public static void main (String[] args){
+    Scanner sc = new Scanner(System.in);
+    String a = sc.nextLine(); // yeh nextLine space bhi count krega
+    a = a.toLowerCase();
+        System.out.println(a);
+    }
+}
+
+OUTPUT :-
+
+MAYANK SiNGH
+mayank singh
