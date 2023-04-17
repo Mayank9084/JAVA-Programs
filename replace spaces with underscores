@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Replace_spaces_with_underscores {
+    public static void main (String[] args){
+        // replace spaces with underscores //
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+       a = a.replace(" ","_");
+       System.out.println(a);
+    }
+}
+
+output :-
+
+my name is 
+my_name_is_
