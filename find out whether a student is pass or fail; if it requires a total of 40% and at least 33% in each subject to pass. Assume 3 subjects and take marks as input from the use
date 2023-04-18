@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class Student_pass {
+    public static void main (String[] args){
+        //  find out whether a student is pass or fail; if it requires a total of 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as input from the user //
+        Scanner sc = new Scanner(System.in);
+        // Subject marks //
+        System.out.println("ENTER PHYSICS MARKS : ");
+        int physics = sc.nextInt();
+        System.out.println("Marks of physics : " +physics);
+        System.out.println("ENTER CHEMISTRY MARKS : ");
+        int chemistry = sc.nextInt();
+        System.out.println("Marks of chemistry : " +chemistry);
+        System.out.println("ENTER MATHS MARKS : ");
+        int maths = sc.nextInt();
+        System.out.println("Marks of maths : " +maths);
+        // Total marks of STUDENT //
+        int totalMarks = chemistry + physics + maths;
+        System.out.println("Total Marks = " +totalMarks);
+        // marks out of //
+        System.out.println("ENTER MARKS out of : ");
+        float marks = sc.nextInt();
+        System.out.println("Marks out of : " +marks);
+        float flg = marks*3;
+        // PERCENTAGE of EACH SUBJECT //
+        float p = ((physics*100)/marks);
+        System.out.println("Physics % = " +p);
+        float c = ((physics*100)/marks);
+        System.out.println("Chemistry % = " +c);
+        float m = ((physics*100)/marks);
+        System.out.println("Maths % = " +m);
+        // percentage of student //
+        float percentage = ((totalMarks*100)/flg);
+        System.out.println("overall percentage of a STUDENT = " +percentage);
+        if (percentage>=40 && p>=33 && c>=33 && m>=33) {
+            System.out.println("Student is pass ");
+        }
+            else {
+                System.out.println("Student is fail ");
+            }
+        }
+    }
+
+
+
+OUTPUT :-
+
+ENTER PHYSICS MARKS : 
+23
+Marks of physics : 23
+ENTER CHEMISTRY MARKS : 
+56
+Marks of chemistry : 56
+ENTER MATHS MARKS : 
+48
+Marks of maths : 48
+Total Marks = 127
+ENTER MARKS out of : 
+100
+Marks out of : 100.0
+Physics % = 23.0
+Chemistry % = 23.0
+Maths % = 23.0
+overall percentage of a STUDENT = 42.333332
+Student is fail 
