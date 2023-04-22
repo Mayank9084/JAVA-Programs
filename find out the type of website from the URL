@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Type_of_website_from_URL {
+    public static void main(String[] args){
+        // find out the type of website from the URL:
+        //
+        //.com – commercial website
+        //.org – organization website
+        //.in – Indian website
+        Scanner sc = new Scanner(System.in);
+        String website = sc.nextLine();
+        if(website.endsWith(".com")){
+            System.out.println("Site is Commercial");
+        } else if (website.endsWith(".org")) {
+            System.out.println("Site is organization");
+        }
+        else if(website.endsWith(".in")){
+            System.out.println("Site is INDIAN");
+        }
+    }
+}
+
+
+OUTPUTS :- 
+
+mayank.in
+Site is INDIAN
