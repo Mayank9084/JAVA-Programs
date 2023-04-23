@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Sum_first_n_even_numbers_while {
+    public static void main(String[] args){
+        // sum first n even numbers using a while loop. //
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int i=1,sum=0;
+        while(i<=n)
+        {
+            sum = sum + (2*i);
+            System.out.print("Sum of even numbers is: ");
+            System.out.println(sum);
+            i++;
+        }
+        }
+    }
+
+
+OUTPUT:- 
+
+10
+Sum of even numbers is: 2
+Sum of even numbers is: 6
+Sum of even numbers is: 12
+Sum of even numbers is: 20
+Sum of even numbers is: 30
+Sum of even numbers is: 42
+Sum of even numbers is: 56
+Sum of even numbers is: 72
+Sum of even numbers is: 90
+Sum of even numbers is: 110
