@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Searching_in_arr {
+    public static void main(String[] args){
+        // find out whether a given integer is present in an array or not.
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        System.out.println("Write number to find = " +i );
+        boolean isInArray = false;
+        int [] a = {1 , 2 , 3 , 4, 5};
+        for (int element:a) {
+            if (i == element) {
+                isInArray = true;
+                break;
+            }
+        }
+        if(isInArray){
+            System.out.println("Number is in array = " + i);
+        }
+        else{
+            System.out.println("Number not in Array = " + i);
+        }
+    }
+}
+
+
+OUTPUT :- 
+
+5
+Write number to find = 5
+Number is in array = 5
