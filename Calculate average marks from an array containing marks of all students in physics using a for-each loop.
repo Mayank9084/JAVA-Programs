@@ -1,0 +1,18 @@
+public class Average_marks_arr {
+    public static void main(String[] args){
+        // average marks from an array containing marks of all students in physics using a for-each loop.
+        float [] marks = {22 , 63 , 70, 96 , 56};
+        float sum = 0;
+        for (float element:marks) {
+            sum = sum + element;
+        }
+        System.out.println("total sum = " +sum);
+        System.out.println("Average = " + sum/marks.length);
+    }
+}
+
+
+OUTPUT :- 
+
+total sum = 307.0
+Average = 61.4
